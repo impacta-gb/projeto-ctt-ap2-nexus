@@ -127,11 +127,9 @@ map[João:8 Maria:10]
 
 | Operação | Exemplo |
 |---|---|
-| ➕ Inserir | mapa["Pedro"]=9 |
-| 🔍 Ler | mapa["João"] |
-| ❌ Remover | delete(mapa,"João") |
-
----
+| ➕ Inserir | `mapa[\"Pedro\"] = 9` |
+| 🔍 Ler | `mapa[\"João\"]` |
+| ❌ Remover | `delete(mapa,\"João\")` |
 
 ## 📊 Diferenças entre Arrays, Slices e Maps
 
