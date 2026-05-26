@@ -2,75 +2,109 @@ name: CI/CD Zensical
 
 on:
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
+
   push:
-    branches: [ main ]
+    branches:
+      - main
+
   schedule:
     - cron: '0 0 * * 0'
 
 jobs:
+
   validate:
+    name: Validar Build
+
     if: github.event_name == 'pull_request'
+
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
         python-version: ['3.10', '3.11']
+
     steps:
-      - uses: actions/checkout@v4
-      - name: Setup Python ${{ matrix.python-version }}
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+
       - name: Cache pip
         uses: actions/cache@v3
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          key: ${{ runner.os }}-${{ matrix.python-version }}
+
       - name: Install Zensical
         run: pip install zensical
+
       - name: Build site
         run: zensical build
 
   build_site:
+    name: Build Site
+
     if: github.event_name == 'push' || github.event_name == 'schedule'
+
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - name: Cache pip
         uses: actions/cache@v3
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          key: build-${{ runner.os }}
+
       - name: Install Zensical
         run: pip install zensical
+
       - name: Build site
         run: zensical build
+
+      - name: Verificar arquivos
+        run: ls -R
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: site-output
-          path: _site/
+          path: site/
 
   deploy_site:
+    name: Deploy GitHub Pages
+
     needs: build_site
+
     if: github.event_name == 'push' || github.event_name == 'schedule'
+
     runs-on: ubuntu-latest
+
     permissions:
       contents: write
+
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
           name: site-output
-          path: _site/
+          path: site/
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: _site/
+          publish_dir: site/
           publish_branch: gh-pages
-          ci: adiciona workflow completo com matrix, cache e jobs separados
