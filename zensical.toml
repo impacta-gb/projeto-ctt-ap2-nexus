@@ -11,7 +11,7 @@
 # The site_name is shown in the page header and the browser window title
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_name
-site_name = "Documentation"
+site_name = "Documentação Go"
 
 # The site_description is included in the HTML head and should contain a
 # meaningful description of the site content for use by search engines.
@@ -44,10 +44,18 @@ Copyright &copy; 2026 The authors
 # can be defined using TOML syntax.
 #
 # Read more: https://zensical.org/docs/setup/navigation/
-# nav = [
-#   { "Get started" = "index.md" },
-#   { "Markdown in 5min" = "markdown.md" },
-# ]
+nav = [
+  { "01 - Introdução e Instalação" = "introducao-instalacao.md" },
+  { "02 - Sintaxe Básica e Variáveis" = "sintaxe-variaveis.md" },
+  { "03 - Estruturas de Controle" = "estruturas-controle.md" },
+  { "04 - Arrays, Slices e Maps" = "arrays-slices-maps.md" },
+  { "05 - Structs e Métodos" = "structs-metodos.md" },
+  { "06 - Tratamento de Erros" = "error-handling.md" },
+  { "07 - Concorrência I: Goroutines" = "goroutines.md" },
+  { "08 - Concorrência II: Channels" = "channels.md" },
+  { "09 - Gerenciamento de Pacotes" = "gerenciamento-pacotes.md" },
+  { "10 - Testes Automatizados" = "testes-automatizados.md" },
+]
 
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of
