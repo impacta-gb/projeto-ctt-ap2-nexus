@@ -7,7 +7,7 @@
 # ============================================================================
 
 [project]
-
+announcement = "🚀 Projeto de documentação da linguagem Go utilizando Zensical + CI/CD"
 # The site_name is shown in the page header and the browser window title
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_name
@@ -45,16 +45,18 @@ Copyright &copy; 2026 The authors
 #
 # Read more: https://zensical.org/docs/setup/navigation/
 nav = [
+  { "INDEX" = "testes-automatizados.md" },
   { "01 - Introdução e Instalação" = "introducao-instalacao.md" },
   { "02 - Sintaxe Básica e Variáveis" = "sintaxe-variaveis.md" },
   { "03 - Estruturas de Controle" = "estruturas-controle.md" },
   { "04 - Arrays, Slices e Maps" = "arrays-slices-maps.md" },
   { "05 - Structs e Métodos" = "structs-metodos.md" },
   { "06 - Tratamento de Erros" = "error-handling.md" },
-  { "07 - Concorrência I: Goroutines" = "goroutines.md" },
+  { "07 - Concorrência I: Goroutines" = "goroutinesI.md" },
   { "08 - Concorrência II: Channels" = "channels.md" },
-  { "09 - Gerenciamento de Pacotes" = "gerenciamento-pacotes.md" },
+  { "09 - Gerenciamento de Pacotes" = "go-modules.md" },
   { "10 - Testes Automatizados" = "testes-automatizados.md" },
+  { "MARKDOWN" = "markdown.md" },
 ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
@@ -297,13 +299,19 @@ features = [
 # ----------------------------------------------------------------------------
 [[project.theme.palette]]
 scheme = "default"
-toggle.icon = "lucide/sun"
-toggle.name = "Switch to dark mode"
+primary = "blue"
+accent = "indigo"
+
+toggle.icon = "lucide/moon"
+toggle.name = "Modo escuro"
 
 [[project.theme.palette]]
 scheme = "slate"
-toggle.icon = "lucide/moon"
-toggle.name = "Switch to light mode"
+primary = "black"
+accent = "blue"
+
+toggle.icon = "lucide/sun"
+toggle.name = "Modo claro"
 
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
