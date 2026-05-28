@@ -1,6 +1,6 @@
-# Concorrência I: Goroutines
+# 🚀 Concorrência I: Goroutines
 
-# 🚀 Introdução
+# 📘 Introdução
 
 As Goroutines são uma das funcionalidades mais poderosas da linguagem Go.
 
@@ -14,10 +14,10 @@ Concorrência é a capacidade de executar várias tarefas simultaneamente.
 
 Exemplos:
 
-- baixar arquivos 📥
-- responder usuários 🌐
-- processar pedidos 🛒
-- executar APIs ⚡
+* 📥 baixar arquivos
+* 🌐 responder usuários
+* 🛒 processar pedidos
+* ⚡ executar APIs
 
 ---
 
@@ -62,10 +62,10 @@ func main() {
 
 # 🔍 Explicação
 
-| Código | Função |
-|---|---|
-| go mensagem() | Executa a função em paralelo |
-| time.Sleep() | Dá tempo da goroutine executar |
+| Código             | Função                         |
+| ------------------ | ------------------------------ |
+| 🚀 `go mensagem()` | Executa a função em paralelo   |
+| ⏱️ `time.Sleep()`  | Dá tempo da goroutine executar |
 
 ---
 
@@ -73,7 +73,9 @@ func main() {
 
 !!! warning
 
-    Se o programa terminar antes da goroutine finalizar, ela será encerrada automaticamente.
+```
+⚠️ Se o programa terminar antes da goroutine finalizar, ela será encerrada automaticamente.
+```
 
 ---
 
@@ -130,12 +132,12 @@ Isso acontece porque ambas estão rodando simultaneamente.
 
 # 🛠️ Vantagens das Goroutines
 
-| Vantagem | Benefício |
-|---|---|
-| Leves | Consomem pouca memória |
-| Rápidas | Alta performance |
-| Simples | Fácil implementação |
-| Escaláveis | Ótimas para servidores |
+| Vantagem      | Benefício              |
+| ------------- | ---------------------- |
+| ⚡ Leves       | Consomem pouca memória |
+| 🚀 Rápidas    | Alta performance       |
+| 🧩 Simples    | Fácil implementação    |
+| 📈 Escaláveis | Ótimas para servidores |
 
 ---
 
@@ -175,11 +177,11 @@ func main() {
 
 As Goroutines são muito utilizadas em:
 
-- APIs REST 🌐
-- Microsserviços ⚙️
-- Sistemas distribuídos 📡
-- Processamento paralelo 🚀
-- Upload e download de arquivos 📥
+* 🌐 APIs REST
+* ⚙️ Microsserviços
+* 📡 Sistemas distribuídos
+* 🚀 Processamento paralelo
+* 📥 Upload e download de arquivos
 
 ---
 
@@ -187,7 +189,9 @@ As Goroutines são muito utilizadas em:
 
 !!! warning
 
-    Muitas Goroutines sem controle podem causar problemas de memória e concorrência.
+```
+⚠️ Muitas Goroutines sem controle podem causar problemas de memória e concorrência.
+```
 
 ---
 
@@ -195,17 +199,19 @@ As Goroutines são muito utilizadas em:
 
 !!! note
 
-    Utilize Goroutines apenas quando realmente houver necessidade de concorrência.
+```
+🧠 Utilize Goroutines apenas quando realmente houver necessidade de concorrência.
+```
 
 ---
 
-# 🧠 Comparação
+# 📋 Comparação
 
-| Sem Goroutines | Com Goroutines |
-|---|---|
+| Sem Goroutines             | Com Goroutines         |
+| -------------------------- | ---------------------- |
 | Executa uma tarefa por vez | Executa várias tarefas |
-| Mais lento | Mais rápido |
-| Menor complexidade | Maior performance |
+| Mais lento                 | Mais rápido            |
+| Menor complexidade         | Maior performance      |
 
 ---
 
@@ -251,9 +257,9 @@ As Goroutines tornam o Go extremamente poderoso para aplicações modernas.
 
 Com poucas linhas de código é possível:
 
-- executar tarefas paralelas ⚡
-- aumentar performance 🚀
-- melhorar escalabilidade 📈
-- criar aplicações robustas 🌐
+* ⚡ executar tarefas paralelas
+* 🚀 aumentar performance
+* 📈 melhorar escalabilidade
+* 🌐 criar aplicações robustas
 
 Elas são um dos principais motivos da popularidade do Go no desenvolvimento backend.

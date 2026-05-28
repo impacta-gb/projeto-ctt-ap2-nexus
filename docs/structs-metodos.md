@@ -1,4 +1,4 @@
-# Structs e Métodos em Go
+# 🧱 Structs e Métodos em Go
 
 # 📖 Introdução
 
@@ -14,7 +14,7 @@ Já os **métodos** permitem adicionar comportamentos para essas structs.
 
 Uma struct é um conjunto de campos (atributos).
 
-## Exemplo básico
+## 🧪 Exemplo básico
 
 ```go
 package main
@@ -42,12 +42,12 @@ func main() {
 
 # 🔍 Explicando o código
 
-| Parte | Função |
-|---|---|
-| type Pessoa struct | Cria uma struct |
-| Nome string | Campo do tipo texto |
-| Idade int | Campo numérico |
-| Pessoa{} | Cria um objeto da struct |
+| Parte                   | Função                   |
+| ----------------------- | ------------------------ |
+| 🧱 `type Pessoa struct` | Cria uma struct          |
+| 📝 `Nome string`        | Campo do tipo texto      |
+| 🔢 `Idade int`          | Campo numérico           |
+| 📦 `Pessoa{}`           | Cria um objeto da struct |
 
 ---
 
@@ -55,7 +55,7 @@ func main() {
 
 Podemos acessar os valores usando `.`
 
-## Exemplo
+## 🧪 Exemplo
 
 ```go
 package main
@@ -155,11 +155,11 @@ func main() {
 
 # 🔍 Explicação do Método
 
-| Código | Significado |
-|---|---|
-| func (c Carro) | Método ligado à struct |
-| ExibirInformacoes() | Nome do método |
-| c.Marca | Acessa atributo da struct |
+| Código                    | Significado               |
+| ------------------------- | ------------------------- |
+| ⚙️ `func (c Carro)`       | Método ligado à struct    |
+| 🏷️ `ExibirInformacoes()` | Nome do método            |
+| 📦 `c.Marca`              | Acessa atributo da struct |
 
 ---
 
@@ -171,16 +171,16 @@ package main
 import "fmt"
 
 type Produto struct {
-    Nome   string
-    Preco  float64
+    Nome    string
+    Preco   float64
     Estoque int
 }
 
 func main() {
 
     produto1 := Produto{
-        Nome:   "Notebook",
-        Preco:  3500.99,
+        Nome:    "Notebook",
+        Preco:   3500.99,
         Estoque: 10,
     }
 
@@ -191,7 +191,7 @@ func main() {
 
 ---
 
-# 👨‍💻 Método para calcular desconto
+# 💸 Método para calcular desconto
 
 ```go
 package main
@@ -228,7 +228,9 @@ func main() {
 
 !!! warning
 
-    Structs ajudam muito na organização do código, mas criar structs gigantes pode dificultar a manutenção.
+```
+⚠️ Structs ajudam muito na organização do código, mas criar structs gigantes pode dificultar a manutenção.
+```
 
 ---
 
@@ -236,17 +238,19 @@ func main() {
 
 !!! note
 
-    Use nomes claros e objetivos para structs e métodos.
+```
+🧠 Use nomes claros e objetivos para structs e métodos.
+```
 
 ---
 
-# 🧠 Comparação rápida
+# 📋 Comparação rápida
 
-| Conceito | Função |
-|---|---|
-| Struct | Armazena dados |
-| Método | Executa ações |
-| Campo | Informação da struct |
+| Conceito  | Função               |
+| --------- | -------------------- |
+| 🧱 Struct | Armazena dados       |
+| ⚙️ Método | Executa ações        |
+| 📦 Campo  | Informação da struct |
 
 ---
 
@@ -289,9 +293,9 @@ As `structs` e os `métodos` são fundamentais em Go.
 
 Com eles é possível:
 
-- organizar dados 📦
-- reutilizar código ♻️
-- criar sistemas mais limpos 🧹
-- facilitar manutenção 🔧
+* 📦 organizar dados
+* ♻️ reutilizar código
+* 🧹 criar sistemas mais limpos
+* 🔧 facilitar manutenção
 
 Eles são extremamente utilizados em APIs, sistemas web e aplicações profissionais.
