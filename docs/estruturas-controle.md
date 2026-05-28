@@ -1,22 +1,22 @@
-# Estruturas de Controle em Go
+# 🔀 Estruturas de Controle em Go
 
-## Introdução
+## 📘 Introdução
 
 As estruturas de controle são utilizadas para controlar o fluxo de execução do programa.
 
 Em Go, as principais estruturas são:
 
-- if
-- for
-- switch
+* 🔹 `if`
+* 🔁 `for`
+* 🔀 `switch`
 
 ---
 
-# Estrutura If
+# ✅ Estrutura If
 
 O `if` é utilizado para executar uma condição.
 
-## Exemplo simples
+## 🧪 Exemplo simples
 
 ```go
 package main
@@ -36,7 +36,7 @@ func main() {
 
 ---
 
-## If e Else
+## 🔄 If e Else
 
 ```go
 package main
@@ -58,7 +58,7 @@ func main() {
 
 ---
 
-## If, Else If e Else
+## 📊 If, Else If e Else
 
 ```go
 package main
@@ -82,13 +82,13 @@ func main() {
 
 ---
 
-# Estrutura For
+# 🔁 Estrutura For
 
 Em Go existe apenas a estrutura `for` para repetição.
 
 ---
 
-## For tradicional
+## 🧮 For tradicional
 
 ```go
 package main
@@ -106,7 +106,7 @@ func main() {
 
 ---
 
-## For como While
+## 🔄 For como While
 
 ```go
 package main
@@ -127,7 +127,7 @@ func main() {
 
 ---
 
-## Loop infinito
+## ♾️ Loop infinito
 
 ```go
 for {
@@ -137,17 +137,19 @@ for {
 
 !!! warning
 
-    Loops infinitos podem travar o programa se não houver controle.
+```
+⚠️ Loops infinitos podem travar o programa se não houver controle.
+```
 
 ---
 
-# Estrutura Switch
+# 🔀 Estrutura Switch
 
 O `switch` é utilizado para múltiplas condições.
 
 ---
 
-## Exemplo básico
+## 🧪 Exemplo básico
 
 ```go
 package main
@@ -179,7 +181,7 @@ func main() {
 
 ---
 
-## Switch sem condição
+## 🧠 Switch sem condição
 
 ```go
 package main
@@ -205,16 +207,16 @@ func main() {
 
 ---
 
-# Comparação das Estruturas
+# 📋 Comparação das Estruturas
 
-| Estrutura | Função |
-|---|---|
-| if | Executar condições |
-| for | Criar repetições |
-| switch | Trabalhar com múltiplos casos |
+| Estrutura   | Função                        |
+| ----------- | ----------------------------- |
+| ✅ `if`      | Executar condições            |
+| 🔁 `for`    | Criar repetições              |
+| 🔀 `switch` | Trabalhar com múltiplos casos |
 
 ---
 
-# Conclusão
+# 🏁 Conclusão
 
 As estruturas de controle são fundamentais em Go para tomada de decisões e repetição de tarefas.

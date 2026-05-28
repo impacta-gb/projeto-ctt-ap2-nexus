@@ -1,12 +1,12 @@
-# Sintaxe Básica e Variáveis
+# 🧠 Sintaxe Básica e Variáveis
 
-## Introdução
+## 📘 Introdução
 
 A linguagem Go (Golang) possui uma sintaxe simples, limpa e fácil de aprender. Seu objetivo é oferecer alto desempenho e facilitar a manutenção do código.
 
 ---
 
-## Estrutura básica de um programa Go
+## ⚙️ Estrutura básica de um programa Go
 
 Todo programa em Go começa declarando o pacote principal (`package main`) e a função principal (`main()`).
 
@@ -20,22 +20,22 @@ func main() {
 }
 ```
 
-### Explicação
+### 📝 Explicação
 
-| Comando | Função |
-|----------|---------|
-| package main | Define o pacote principal |
-| import | Importa bibliotecas |
-| func main() | Função principal |
-| fmt.Println() | Exibe algo na tela |
+| Comando             | Função                    |
+| ------------------- | ------------------------- |
+| 📦 `package main`   | Define o pacote principal |
+| 📥 `import`         | Importa bibliotecas       |
+| 🚀 `func main()`    | Função principal          |
+| 🖥️ `fmt.Println()` | Exibe algo na tela        |
 
 ---
 
-## Declaração de variáveis
+## 📦 Declaração de variáveis
 
 Em Go existem diferentes maneiras de declarar variáveis.
 
-### Forma tradicional
+### 🧾 Forma tradicional
 
 ```go
 var nome string = "João"
@@ -43,7 +43,7 @@ var nome string = "João"
 
 ---
 
-### Inferência automática de tipo
+### 🤖 Inferência automática de tipo
 
 O Go consegue descobrir o tipo automaticamente.
 
@@ -53,7 +53,7 @@ var idade = 20
 
 ---
 
-### Declaração curta
+### ⚡ Declaração curta
 
 A forma mais usada em Go:
 
@@ -63,18 +63,18 @@ cidade := "São Paulo"
 
 ---
 
-## Tipos básicos
+## 🔢 Tipos básicos
 
-| Tipo | Exemplo |
-|-------|----------|
-| int | 10 |
-| float64 | 15.7 |
-| string | "Texto" |
-| bool | true |
+| Tipo         | Exemplo |
+| ------------ | ------- |
+| 🔢 `int`     | 10      |
+| 📏 `float64` | 15.7    |
+| 📝 `string`  | "Texto" |
+| ✅ `bool`     | true    |
 
 ---
 
-## Exemplo completo
+## 💻 Exemplo completo
 
 ```go
 package main
@@ -98,8 +98,12 @@ func main() {
 
 !!! warning
 
-    Variáveis declaradas e não utilizadas geram erro em Go.
+```
+⚠️ Variáveis declaradas e não utilizadas geram erro em Go.
+```
 
 !!! note
 
-    A declaração curta usando := só pode ser utilizada dentro de funções.
+```
+💡 A declaração curta usando := só pode ser utilizada dentro de funções.
+```
